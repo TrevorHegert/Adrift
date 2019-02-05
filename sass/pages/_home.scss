@@ -5,6 +5,7 @@
 }
 
 .section-features {
+    margin-top: -15rem;
     padding: 20rem 0;
     background-image: linear-gradient(to bottom right,
         rgba($color-primary-light, 0.7),
@@ -12,4 +13,10 @@
         url($sailboat-2);
     background-size: cover;
     background-position: center;
+
+    transform: skewY(-6deg);
+
+    &>* {
+        transform: skewY(6deg);
+    }
 }

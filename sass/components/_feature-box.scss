@@ -4,9 +4,10 @@
     font-size: 1.5rem;
     text-align: center;
     border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    box-shadow: 0 1.0rem 3rem rgba($color-black, .15);
     height: 35rem;
     border: solid 2px $color-primary-dark;
+    transition: all .3s;
 
     &__icon {
         font-size: 6rem;
@@ -15,6 +16,16 @@
         background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
         -webkit-background-clip: text;
         color: transparent;
+    }
+
+    &:hover {
+        transform: translateY(-2rem) scale(1.05);
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    }
+
+    &:active {
+        transform: translateY(-1.5rem) scale(1.02);
+        box-shadow: 0 1.3rem 3.5rem rgba($color-black, .15);
     }
 
     &__text {

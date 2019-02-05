@@ -180,13 +180,13 @@ body {
     transition: all .2s; }
     .composition__photo--p1 {
       left: 0;
-      top: -2rem; }
+      top: -2.5rem; }
     .composition__photo--p2 {
       right: 0;
-      top: 2rem; }
+      top: 2.5rem; }
     .composition__photo--p3 {
-      left: 20%;
-      top: 10rem; }
+      left: 14%;
+      top: 13.5rem; }
     .composition__photo:hover {
       outline: 1.5rem solid #5582c8;
       transform: scale(1.1) translateY(-0.5rem);
@@ -201,9 +201,10 @@ body {
   font-size: 1.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
   height: 35rem;
-  border: solid 2px #3728b4; }
+  border: solid 2px #3728b4;
+  transition: all .3s; }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
@@ -211,6 +212,12 @@ body {
     background-image: linear-gradient(to bottom right, #6ed2d7, #3728b4);
     -webkit-background-clip: text;
     color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-2rem) scale(1.05);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .feature-box:active {
+    transform: translateY(-1.5rem) scale(1.02);
+    box-shadow: 0 1.3rem 3.5rem rgba(0, 0, 0, 0.15); }
   .feature-box__text {
     font-size: 1.2rem; }
 
@@ -270,7 +277,11 @@ body {
   margin-top: -16vh; }
 
 .section-features {
+  margin-top: -15rem;
   padding: 20rem 0;
   background-image: linear-gradient(to bottom right, rgba(110, 210, 215, 0.7), rgba(55, 40, 180, 0.7)), url("https://www.desktop-background.com/p/2011/05/19/205769_sailing-wallpapers_1920x1080_h.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  transform: skewY(-6deg); }
+  .section-features > * {
+    transform: skewY(6deg); }
