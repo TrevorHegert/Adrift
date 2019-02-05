@@ -2,12 +2,10 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 52rem;
 
     &__side {
-        font-size: 3rem;
-        color: white;
-        height: 50rem;
+        height: 52rem;
         transition: all .6s ease-in;
         position: absolute;
         top: 0;
@@ -15,10 +13,11 @@
         width: 100%;
         backface-visibility: hidden;
         border-radius: 3px;
+        overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-primary-dark, .4);
 
         &--front {
-            background-color: orangered;
+            background-color: $color-white;
         }
 
         &--back {
@@ -36,7 +35,64 @@
     }
 
     &:hover &__side--back {
-        transform: rotateY(0deg);
+        transform: rotateY(360deg);
 
+    }
+
+
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+        &-1 {
+            background-image: url($card-hunter);
+
+
+        }
+    }
+
+    &__heading {
+        font-size: 2.4rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        top: 16.8rem;
+        right: 1.2rem;
+
+    }
+
+    &__heading--span {
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &-1 {
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+            padding: 0 1rem;
+            border-radius: 5px;
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
+        }
     }
 }
