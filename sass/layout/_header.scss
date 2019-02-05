@@ -4,7 +4,7 @@
     background-image: linear-gradient(to bottom right,
         rgba($color-primary-light, 0.7),
         rgba($color-primary-dark, 0.7)),
-        url("../img/sail2_raw.jpg");
+        url($sailboat-1);
     background-size: cover;
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
