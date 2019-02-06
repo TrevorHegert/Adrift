@@ -2,10 +2,10 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 52rem;
+    height: 60rem;
 
     &__side {
-        height: 52rem;
+        height: 60rem;
         transition: all .6s ease-in;
         position: absolute;
         top: 0;
@@ -25,6 +25,14 @@
 
             &-1 {
                 background-image: linear-gradient(to right, $color-secondary-light, $color-secondary-dark);
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark);
             }
         }
     }
@@ -49,8 +57,14 @@
 
         &-1 {
             background-image: url($card-hunter);
+        }
 
+        &-2 {
+            background-image: url($card-amel);
+        }
 
+        &-3 {
+            background-image: url($card-lagoon);
         }
     }
 
@@ -60,8 +74,8 @@
         text-transform: uppercase;
         color: $color-white;
         position: absolute;
-        top: 16.8rem;
-        right: 1.2rem;
+        top: 1rem;
+        left: 1.2rem;
 
     }
 
@@ -71,6 +85,18 @@
 
         &-1 {
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+            padding: 0 1rem;
+            border-radius: 5px;
+        }
+
+        &-2 {
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .85));
+            padding: 0 1rem;
+            border-radius: 5px;
+        }
+
+        &-3 {
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
             padding: 0 1rem;
             border-radius: 5px;
         }
