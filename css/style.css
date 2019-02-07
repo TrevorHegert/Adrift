@@ -118,10 +118,11 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .35; }
+  opacity: .35;
+  overflow: hidden; }
   .bg-video__content {
-    max-height: 100%;
-    width: 99.95%;
+    height: 100%;
+    width: 100%;
     object-fit: cover; }
 
 .btn:link, .btn:visited {

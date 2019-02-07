@@ -6,10 +6,11 @@
     width: 100%;
     z-index: -1;
     opacity: .35;
+    overflow: hidden;
 
     &__content {
-        max-height: 100%;
-        width: 99.95%;
+        height: 100%;
+        width: 100%;
         object-fit: cover;
     }
 }
