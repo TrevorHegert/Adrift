@@ -465,3 +465,16 @@ body {
 .section-stories {
   position: relative;
   padding: 15rem 0; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #6ed2d7, #3728b4); }
+
+.book {
+  background-image: linear-gradient(115deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0.1) 50%), url("https://www.desktop-background.com/p/2015/06/15/964211_sailing-yachts-hd-desktop-wallpapers-widescreen-high-definition_960x640_h.jpg");
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  height: 50rem; }
+  .book__form {
+    width: 50%; }
