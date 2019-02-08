@@ -77,11 +77,12 @@ body {
   background-image: linear-gradient(to right, #6ed2d7, #3728b4);
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: .2rem;
-  transition: all .2s; }
-  .heading-secondary:hover {
-    transform: skewY(-2deg) skewX(15deg) scale(1.2);
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+  letter-spacing: .2rem; }
+  .heading-secondary-animated {
+    transition: all .2s; }
+    .heading-secondary-animated:hover {
+      transform: skewY(-2deg) skewX(15deg) scale(1.2);
+      text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -346,6 +347,27 @@ body {
 
 .another {
   color: blue; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+  .form__input__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #5582c8; }
 
 .story {
   width: 75%;
