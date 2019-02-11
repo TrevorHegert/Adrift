@@ -493,13 +493,19 @@ body {
 .footer {
   background-color: #333;
   padding: 10rem 0;
-  font-size: 1.4rem; }
+  font-size: 1.3rem; }
   .footer__logo {
     width: 15rem;
     height: auto; }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 6rem; }
+  .footer__navigation, .footer__copyright {
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 2rem;
+    display: inline-block;
+    width: 100%; }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -508,6 +514,7 @@ body {
       margin-right: 1.5rem; }
   .footer__link:visited, .footer__link:link {
     color: #777;
+    background-color: #333;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
