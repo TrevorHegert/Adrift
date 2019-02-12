@@ -83,15 +83,16 @@ body {
     .heading-secondary-animated:hover {
       transform: skewY(-2deg) skewX(15deg) scale(1.2);
       text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .heading-secondary-small {
+    font-size: 1.7rem;
+    display: block;
+    background-image: linear-gradient(to left, #6ed2d7, #3728b4);
+    padding: 0rem 1rem 1rem 1.8rem; }
 
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: capitalize; }
-  .heading-tertiary-blue {
-    color: #5582c8;
-    font-size: 1.8rem;
-    padding-left: 1.6rem; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -608,6 +609,6 @@ body {
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  height: 50rem; }
+  height: 55rem; }
   .book__form {
     width: 50%; }

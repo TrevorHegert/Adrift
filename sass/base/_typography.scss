@@ -54,18 +54,19 @@ body {
             text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
         }
     }
+
+    &-small {
+        font-size: 1.7rem;
+        display: block;
+        background-image: linear-gradient(to left, $color-primary-light, $color-primary-dark);
+        padding: 0rem 1rem 1rem 1.8rem;
+    }
 }
 
 .heading-tertiary {
     font-size: $font-size-default;
     font-weight: 700;
     text-transform: capitalize;
-
-    &-blue {
-        color: $color-primary;
-        font-size: 1.8rem;
-        padding-left: 1.6rem;
-    }
 }
 
 .paragraph {
