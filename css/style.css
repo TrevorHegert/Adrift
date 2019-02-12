@@ -459,7 +459,6 @@ body {
     width: 15rem;
     height: 15rem;
     float: left;
-    background-color: orangered;
     shape-outside: circle(50% at 50% 50%);
     -webkit-shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
@@ -487,7 +486,7 @@ body {
     opacity: 1;
     transform: translate(-50%, -50%); }
   .story:hover .story__img {
-    transform: translateX(-4rem) scale(1.1);
+    transform: translateX(-2rem) scale(1.1);
     filter: blur(3px) brightness(80%); }
 
 .footer {
