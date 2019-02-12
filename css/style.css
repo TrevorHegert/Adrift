@@ -88,6 +88,10 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: capitalize; }
+  .heading-tertiary-blue {
+    color: #5582c8;
+    font-size: 1.8rem;
+    padding-left: 1.6rem; }
 
 .paragraph {
   font-size: 1.6rem; }

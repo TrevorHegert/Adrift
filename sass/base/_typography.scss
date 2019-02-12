@@ -60,6 +60,12 @@ body {
     font-size: $font-size-default;
     font-weight: 700;
     text-transform: capitalize;
+
+    &-blue {
+        color: $color-primary;
+        font-size: 1.8rem;
+        padding-left: 1.6rem;
+    }
 }
 
 .paragraph {
